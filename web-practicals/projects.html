@@ -1,3 +1,70 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P12 – Advanced Project Grid</title><link rel="stylesheet" href="css/styles.css"></head><body>
-<header class="site-header"><a class="brand" href="index.html">MyPortfolio<span>.</span></a><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="bio.html">About</a></nav></header>
-<main class="container"><p class="eyebrow">P12 · PORTFOLIO PROJECTS GRID WITH ADVANCED CSS GRID</p><h1>Selected Projects</h1><p>These are example project cards. Replace them with work you have actually completed.</p><section class="project-grid"><article class="project featured"><p class="eyebrow">FEATURED PROJECT</p><h2>Personal Portfolio</h2><p>A responsive portfolio demonstrating semantic HTML, reusable CSS tokens, Flexbox and Grid.</p></article><article class="project"><h2>Mini Blog</h2><p>A simple multi-article layout.</p></article><article class="project"><h2>Task Tracker</h2><p>A small interface for organizing tasks.</p></article><article class="project wide"><h2>Learning Journal</h2><p>A page documenting concepts, experiments and progress.</p></article><article class="project"><h2>More work</h2><p>Add another genuine project here.</p></article></section></main><footer class="site-footer"><p>© 2026 Your Name</p></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Advanced responsive CSS Grid project cards practical.">
+  <title>P12 — Projects Grid | Sarang Bodhe</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Sarang Bodhe<span>.</span></a>
+    <nav class="main-nav" aria-label="Practical pages">
+      <a href="index.html">Home</a><a href="bio.html">P5 Bio</a><a href="portfolio.html">P6–P7 Portfolio</a>
+      <a href="positioning.html">P8 Positioning</a><a href="flexbox.html">P9–P10 Flexbox</a>
+      <a href="newspaper.html">P11 Grid</a><a href="projects.html" aria-current="page">P12 Projects</a><a href="layout-choice.html">P13 Layout choice</a>
+    </nav>
+  </header>
+  <main class="container" id="main">
+    <p class="eyebrow">P12 · Portfolio projects grid with advanced CSS Grid</p>
+    <h1>Selected practicals</h1>
+    <p class="lead">These cards link to actual pages in this repository. They describe the assignment work shown here, not outside client or employment projects.</p>
+    <section class="project-grid" aria-label="Featured practical projects">
+      <article class="project featured">
+        <p class="project-label">Featured · P6–P7</p>
+        <h2>Semantic portfolio and design system</h2>
+        <p>A complete portfolio page uses semantic sections and centralized CSS tokens for typography, spacing, color, and layout.</p>
+        <a class="button-secondary" href="portfolio.html">Open portfolio practical</a>
+      </article>
+      <article class="project">
+        <p class="project-label">P9–P10 · Flexbox</p>
+        <h2>Responsive component layout</h2>
+        <p>A flexible header, wrapping card row, and adaptable footer.</p>
+        <a href="flexbox.html">Open Flexbox practical</a>
+      </article>
+      <article class="project">
+        <p class="project-label">P11 · Grid</p>
+        <h2>Newspaper layout</h2>
+        <p>A featured story and supporting items placed using named Grid areas.</p>
+        <a href="newspaper.html">Open newspaper practical</a>
+      </article>
+      <article class="project wide">
+        <p class="project-label">P13 · Layout systems</p>
+        <h2>Choosing between Flexbox and Grid</h2>
+        <p>A comparison of one-dimensional and two-dimensional layout techniques with working examples.</p>
+        <a href="layout-choice.html">Open layout comparison</a>
+      </article>
+      <article class="project">
+        <p class="project-label">P8 · Positioning</p>
+        <h2>Layered interface elements</h2>
+        <p>A sticky navigation bar, fixed control, and positioned overlay card.</p>
+        <a href="positioning.html">Open positioning practical</a>
+      </article>
+    </section>
+    <section aria-labelledby="auto-fill-heading">
+      <h2 id="auto-fill-heading">Auto-fill sizing example</h2>
+      <p>The project cards above use <code>repeat(auto-fit, minmax(...))</code>. This row uses <code>auto-fill</code> to preserve available grid tracks even when the last row has fewer items.</p>
+      <div class="auto-fill-demo" aria-label="Auto-fill grid with three sample tracks">
+        <div>Track A</div><div>Track B</div><div>Track C</div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="footer-brand"><strong>Sarang Bodhe</strong><br>P12 · Advanced CSS Grid</p>
+    <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Practical index</a><a href="portfolio.html">Portfolio</a></nav>
+    <p>© 2026 Sarang Bodhe</p>
+  </footer>
+</body>
+</html>

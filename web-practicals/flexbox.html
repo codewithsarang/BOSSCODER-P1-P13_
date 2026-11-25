@@ -1,3 +1,60 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P9–P10 – Flexbox</title><link rel="stylesheet" href="css/styles.css"></head><body>
-<header class="site-header"><a class="brand" href="index.html">MyPortfolio<span>.</span></a><nav class="main-nav" aria-label="Responsive navigation"><a href="index.html">Home</a><a href="bio.html">About</a><a href="projects.html">Projects</a><a href="layout-choice.html">Contact</a></nav></header>
-<main class="container"><p class="eyebrow">P9 · RESPONSIVE NAVBAR AND CARD GRID USING FLEXBOX / P10 · HEADER AND FOOTER</p><h1>Flexbox Layout</h1><p>The header aligns the brand and navigation with Flexbox. The card row wraps as the viewport narrows.</p><section class="split-header"><strong>Portfolio section header</strong><div class="actions"><a class="button" href="projects.html">View work</a><a class="button" href="bio.html">About me</a></div></section><section><h2>Responsive Flexbox cards</h2><div class="flex-cards"><article class="card"><h3>Design</h3><p>Plan a clear visual hierarchy.</p></article><article class="card"><h3>Develop</h3><p>Build with semantic HTML and CSS.</p></article><article class="card"><h3>Test</h3><p>Check different screen sizes.</p></article></div></section></main><footer class="site-footer"><p>Footer centered with Flexbox · © 2026 Your Name</p></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Responsive navbar, card grid, and advanced Flexbox header and footer practical.">
+  <title>P9–P10 — Flexbox | Sarang Bodhe</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Sarang Bodhe<span>.</span></a>
+    <nav class="main-nav" aria-label="Practical pages">
+      <a href="index.html">Home</a><a href="bio.html">P5 Bio</a><a href="portfolio.html">P6–P7 Portfolio</a>
+      <a href="positioning.html">P8 Positioning</a><a href="flexbox.html" aria-current="page">P9–P10 Flexbox</a>
+      <a href="newspaper.html">P11 Grid</a><a href="projects.html">P12 Projects</a><a href="layout-choice.html">P13 Layout choice</a>
+    </nav>
+    <a class="header-cta" href="bio.html#contact">Contact</a>
+  </header>
+  <main class="container" id="main">
+    <p class="eyebrow">P9 · Responsive Flexbox · P10 · Advanced header and footer</p>
+    <h1>Flexbox layout</h1>
+    <p class="lead">The page header uses a flexible brand, a wrapping navigation area, and a non-shrinking call-to-action. The card row wraps as its container narrows.</p>
+    <section aria-labelledby="header-example">
+      <h2 id="header-example">Flexible component header</h2>
+      <div class="split-header">
+        <strong>Portfolio section header</strong>
+        <div class="actions">
+          <a class="button" href="projects.html">View practicals</a>
+          <a class="button" href="bio.html">About Sarang</a>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="card-example">
+      <h2 id="card-example">Responsive Flexbox cards</h2>
+      <div class="flex-cards">
+        <article class="card"><h3>Semantic structure</h3><p>This card can grow and shrink from its flex basis as available space changes.</p></article>
+        <article class="card"><h3>Flexible alignment</h3><p>Flexbox aligns items on a main axis and can wrap items onto additional rows.</p></article>
+        <article class="card"><h3>Responsive layout</h3><p>Resize the viewport to see the card widths adapt without a fixed column count.</p></article>
+      </div>
+    </section>
+    <section aria-labelledby="properties-heading">
+      <h2 id="properties-heading">Flex item properties in use</h2>
+      <ul class="details-list">
+        <li><code>flex-grow</code>: cards and footer groups can use available free space.</li>
+        <li><code>flex-shrink</code> and <code>flex-basis</code>: the brand and CTA reserve their intrinsic space; cards start from a responsive basis.</li>
+        <li><code>flex-wrap</code>, <code>justify-content</code>, and <code>align-items</code>: navigation, actions, and footer groups adapt to their container.</li>
+        <li><code>align-self</code>: the footer’s social links align to the end of their flex line on wide screens.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="footer-brand"><strong>Sarang Bodhe</strong><br>Flexbox practicals · P9–P10</p>
+    <nav class="footer-nav" aria-label="Footer navigation"><a href="bio.html">Bio</a><a href="projects.html">Projects</a><a href="layout-choice.html">Grid comparison</a></nav>
+    <nav class="social-links" aria-label="Project links"><a href="index.html">Practical index</a><a href="portfolio.html">Portfolio</a></nav>
+    <p>© 2026 Sarang Bodhe</p>
+  </footer>
+</body>
+</html>

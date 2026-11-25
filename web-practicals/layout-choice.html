@@ -1,3 +1,67 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P13 – Flexbox vs Grid</title><link rel="stylesheet" href="css/styles.css"></head><body>
-<header class="site-header"><a class="brand" href="index.html">MyPortfolio<span>.</span></a><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="projects.html">Projects</a></nav></header>
-<main class="container"><p class="eyebrow">P13 · CHOOSING BETWEEN FLEXBOX AND GRID</p><h1>Flexbox vs CSS Grid</h1><p>Both are useful. Choose based on the layout problem rather than treating one as universally better.</p><div class="comparison"><section><h2>Flexbox: one-dimensional</h2><p>Best for arranging items in a row or column, distributing space and aligning items.</p><div class="demo-flex"><span>One</span><span>Two</span><span>Three</span><span>Four</span></div></section><section><h2>Grid: two-dimensional</h2><p>Best when you need to control rows and columns together, such as a dashboard or magazine layout.</p><div class="demo-grid"><span>One</span><span>Two</span><span>Three</span><span>Four</span><span>Five</span><span>Six</span></div></section></div><section><h2>Conclusion</h2><p>Use Flexbox for a navbar or a simple aligned row of cards. Use Grid for a structured page with multiple rows and columns. They can also be combined: Grid for the overall page and Flexbox inside individual components.</p></section></main><footer class="site-footer"><p>© 2026 Your Name</p></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical comparison of CSS Flexbox and Grid.">
+  <title>P13 — Flexbox or Grid? | Sarang Bodhe</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Sarang Bodhe<span>.</span></a>
+    <nav class="main-nav" aria-label="Practical pages">
+      <a href="index.html">Home</a><a href="bio.html">P5 Bio</a><a href="portfolio.html">P6–P7 Portfolio</a>
+      <a href="positioning.html">P8 Positioning</a><a href="flexbox.html">P9–P10 Flexbox</a>
+      <a href="newspaper.html">P11 Grid</a><a href="projects.html">P12 Projects</a><a href="layout-choice.html" aria-current="page">P13 Layout choice</a>
+    </nav>
+  </header>
+  <main class="container" id="main">
+    <p class="eyebrow">P13 · Choosing between Flexbox and Grid</p>
+    <h1>Flexbox or CSS Grid?</h1>
+    <p class="lead">Both layout systems are useful. Choose based on whether the component is primarily one-dimensional or needs coordinated rows and columns.</p>
+    <div class="comparison">
+      <section aria-labelledby="flexbox-heading">
+        <h2 id="flexbox-heading">Flexbox: one dimension</h2>
+        <p>Use Flexbox to arrange items along a row or column, distribute remaining space, and align items on the cross axis.</p>
+        <div class="demo-flex" aria-label="Flexbox example with four items">
+          <span>One</span><span>Two</span><span>Three</span><span>Four</span>
+        </div>
+      </section>
+      <section aria-labelledby="grid-heading">
+        <h2 id="grid-heading">Grid: two dimensions</h2>
+        <p>Use Grid when rows and columns need to work together, such as a dashboard or newspaper page.</p>
+        <div class="demo-grid" aria-label="Grid example with six items">
+          <span>One</span><span>Two</span><span>Three</span><span>Four</span><span>Five</span><span>Six</span>
+        </div>
+      </section>
+    </div>
+    <section aria-labelledby="comparison-heading">
+      <h2 id="comparison-heading">Comparison</h2>
+      <div class="table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr><th scope="col">Question</th><th scope="col">Flexbox</th><th scope="col">CSS Grid</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Primary dimension</th><td>One axis at a time (row or column).</td><td>Rows and columns together.</td></tr>
+            <tr><th scope="row">Useful for</th><td>Navigation bars, aligned controls, and a row of cards.</td><td>Page regions, dashboards, and editorial layouts.</td></tr>
+            <tr><th scope="row">Responsive behavior</th><td>Items can wrap or change direction.</td><td>Tracks can resize, repeat, and reposition at breakpoints.</td></tr>
+            <tr><th scope="row">Can they be combined?</th><td colspan="2">Yes. Grid can arrange the page while Flexbox aligns content inside each component.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section aria-labelledby="conclusion-heading">
+      <h2 id="conclusion-heading">Rule of thumb</h2>
+      <p>Reach for Flexbox when the layout is mainly along a single axis. Reach for Grid when you need to place content in both rows and columns. Neither is universally better; use the one that matches the layout problem.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="footer-brand"><strong>Sarang Bodhe</strong><br>P13 · Flexbox and Grid</p>
+    <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Practical index</a><a href="projects.html">P12 Projects</a></nav>
+    <p>© 2026 Sarang Bodhe</p>
+  </footer>
+</body>
+</html>

@@ -1,103 +1,104 @@
 # P1–P4: Terminal, Git & GitHub workflow
 
-These are command-line practicals. Run commands from Terminal. Replace `your-github-username` and email with your own details.
+These practicals use the existing repository at `BOSSCODER_P1_P13`. Run commands from the repository root. This project already has a `.git` directory and the `origin` remote; **do not run `git init` or add a second remote**.
 
 ## P1: Project folder and terminal navigation
 
+From Terminal, verify and navigate to this project:
+
 ```bash
-# Go to your Desktop
-cd ~/Desktop
-
-# Create the assignment folder
-mkdir bosscoder-web-lab
-
-# Enter the folder
-cd bosscoder-web-lab
-
-# Show the current directory
+cd ~/Downloads/BOSSCODER_P1_P13
 pwd
-
-# List files (including hidden files)
 ls -la
+ls web-practicals
+```
 
-# Create folders
-mkdir web-practicals screenshots
+Useful navigation examples:
 
-# Move one directory up
+```bash
+cd web-practicals
+pwd
+ls
 cd ..
-
-# Return to the project
-cd ~/Desktop/bosscoder-web-lab
 ```
 
-Useful commands:
-- `pwd` – prints the current directory.
-- `ls` – lists files and folders.
-- `cd folder-name` – enters a folder.
-- `cd ..` – moves to the parent folder.
-- `mkdir name` – creates a directory.
-- `touch file.txt` – creates an empty file.
+`pwd` prints the current directory, `ls` lists its contents, and `cd` changes directories. The practical pages are organized in `web-practicals/`, with shared styles in `web-practicals/css/`.
 
-## P2: Portfolio repo with an initial commit
+## P2: Portfolio repository and initial commit workflow
+
+The supplied project is already a Git repository with an existing commit history. Inspect it instead of initializing a nested repository or recreating history:
 
 ```bash
-cd ~/Desktop/bosscoder-web-lab
+git status --short --branch
+git log --oneline --decorate --all
+git remote -v
+```
+
+For a new local project, the general initial-commit sequence is:
+
+```bash
 git init
-git status
-git add .
-git status
-git commit -m "Initial commit: portfolio lab setup"
-git log --oneline
+git add index.html style.css README.md
+git diff --cached
+git commit -m "Initial commit: create portfolio project structure"
 ```
 
-What this does:
-1. `git init` creates a local Git repository.
-2. `git add .` stages project files.
-3. `git commit` saves a version of the staged files.
-4. `git log --oneline` displays commit history.
+Do **not** run `git init` in this existing assignment folder. Review `git status` and `git diff` before staging or committing changes.
 
-## P3: Feature-branch Git workflow
+## P3: Feature-branch workflow
+
+The assignment work is developed on `feature/about-section` and merged into `main` after review. To demonstrate the workflow on a future change, use a unique branch name:
 
 ```bash
-# Create and switch to a feature branch
-git switch -c feature/portfolio-homepage
-
-# Make a change in VS Code, then stage and commit it
-git status
-git add .
-git commit -m "Add portfolio homepage"
-
-# Return to the main branch
 git switch main
-
-# Merge the feature branch into main
-git merge feature/portfolio-homepage
-
-# View branch history
+git pull --ff-only origin main
+git switch -c feature/your-change
+# Edit and inspect the intended files.
+git status
+git diff
+git add path/to/changed-file
+git diff --cached
+git commit -m "feat: describe the change"
+git push -u origin feature/your-change
+git switch main
+git merge --no-ff feature/your-change
+git push origin main
 git log --oneline --graph --all
 ```
 
-If your default branch is named `master`, use `master` instead of `main`.
-Do not delete the feature branch until you have confirmed the merge succeeded.
+The commands above are examples; inspect the current remote state first and do not overwrite another contributor's work.
 
-## P4: GitHub README and version tags
+## P4: README and version tag
 
-1. Sign in at https://github.com/ and create a new repository named `bosscoder-web-lab`.
-2. Do not initialize it with a README if you already have a local README.
-3. In Terminal, from your project folder, connect and push:
+The repository's configured GitHub remote is:
 
-```bash
-git remote add origin https://github.com/your-github-username/bosscoder-web-lab.git
-git push -u origin main
+```text
+https://github.com/codewithsarang/BOSSCODER-P1-P13_.git
 ```
 
-4. Create a version tag and push it:
+Inspect the configured remote and existing tags before publishing:
 
 ```bash
-git tag -a v1.0.0 -m "First complete portfolio lab version"
+git remote -v
+git tag --list
+git ls-remote --heads origin
+git ls-remote --tags origin
+```
+
+After the final assignment commit is on `main`, create and publish the version tag if it does not already exist:
+
+```bash
+git switch main
+git tag -a v1.0.0 -m "Complete BOSSCODER P1-P13 web development practicals"
 git push origin v1.0.0
-git tag
+git show v1.0.0
 ```
 
-If GitHub says the remote already exists, inspect it with `git remote -v`; do not blindly add it again.
-If you created the GitHub repository with an initial commit, you may need to pull and reconcile histories before pushing.
+If `v1.0.0` already exists, do not move or overwrite it; inspect it and choose a new version only if appropriate. The README documents the practicals, technologies, structure, and local run instructions.
+
+## Safety notes
+
+- Never put passwords or access tokens in commands, files, or Git history.
+- Do not force-push or rewrite the existing project history.
+- Confirm the current branch and `git status` before each commit or merge.
+- A successful local push command is not proof of remote state; verify with `git ls-remote` or the GitHub repository page.

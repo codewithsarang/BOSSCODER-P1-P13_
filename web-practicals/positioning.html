@@ -1,3 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P8 – CSS Positioning</title><link rel="stylesheet" href="css/styles.css"></head><body>
-<header class="site-header"><a class="brand" href="index.html">MyPortfolio<span>.</span></a><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a></nav></header>
-<main class="container"><p class="eyebrow">P8 · STICKY NAVBAR AND CARD OVERLAY</p><h1>CSS Positioning Demo</h1><p>Scroll this page: the navigation bar remains at the top because it uses <code>position: sticky</code>.</p><div class="position-demo"><div class="overlay-card"><h2>Overlay card</h2><p>This card is positioned at the bottom-right of its parent using <code>position: absolute</code>. Its parent uses <code>position: relative</code>.</p></div></div><section><h2>Scroll test</h2><p>Extra content makes the page tall enough to test the sticky navigation.</p><p>Sticky positioning keeps an element in normal document flow until it reaches its specified offset, such as <code>top: 0</code>.</p><p>Resize the browser and inspect the layout.</p></section></main><footer class="site-footer"><p>© 2026 Your Name</p></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CSS positioning examples using sticky, fixed, relative, absolute, and static positioning.">
+  <title>P8 — CSS Positioning | Sarang Bodhe</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Sarang Bodhe<span>.</span></a>
+    <nav class="main-nav" aria-label="Practical pages">
+      <a href="index.html">Home</a><a href="bio.html">P5 Bio</a><a href="portfolio.html">P6–P7 Portfolio</a>
+      <a href="positioning.html" aria-current="page">P8 Positioning</a><a href="flexbox.html">P9–P10 Flexbox</a>
+      <a href="newspaper.html">P11 Grid</a><a href="projects.html">P12 Projects</a><a href="layout-choice.html">P13 Layout choice</a>
+    </nav>
+  </header>
+  <main class="container" id="main">
+    <p class="eyebrow">P8 · Sticky navbar and card overlay</p>
+    <h1>CSS positioning</h1>
+    <p class="lead">Scroll this page to see the sticky header and fixed link. The examples below show how positioning changes an element's place in the document.</p>
+    <section aria-labelledby="overlay-heading">
+      <h2 id="overlay-heading">Relative parent and absolute overlay</h2>
+      <div class="position-demo">
+        <span class="position-marker">Relative parent</span>
+        <article class="overlay-card">
+          <h2>Overlay card</h2>
+          <p>This card is absolutely positioned at the bottom-right of its nearest positioned ancestor. Its stacking layer is controlled with <code>z-index</code>.</p>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="position-examples-heading">
+      <h2 id="position-examples-heading">Static and relative positioning</h2>
+      <div class="position-examples">
+        <article class="position-example position-static"><h3>Static</h3><p>Default document flow; no offset is applied.</p></article>
+        <article class="position-example position-relative"><h3>Relative</h3><p>Remains in flow, then shifts slightly from its original position.</p></article>
+      </div>
+    </section>
+    <section aria-labelledby="sticky-heading">
+      <h2 id="sticky-heading">Sticky and fixed positioning</h2>
+      <p>The navigation bar uses <code>position: sticky; top: 0</code> and remains in the page flow. The “Back to top” control is fixed to the viewport while this page scrolls.</p>
+      <p>Resize the browser to check that the overlay and fixed control remain clear of the content.</p>
+    </section>
+  </main>
+  <a class="fixed-demo-link" href="#top">Back to top</a>
+  <footer class="site-footer">
+    <p class="footer-brand"><strong>Sarang Bodhe</strong><br>P8 · CSS positioning</p>
+    <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Practical index</a><a href="flexbox.html">Next: Flexbox</a></nav>
+    <p>© 2026 Sarang Bodhe</p>
+  </footer>
+</body>
+</html>
