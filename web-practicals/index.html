@@ -3,38 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web Development Lab | P5–P13</title>
+  <meta name="description" content="An index for Sarang Bodhe's BOSSCODER web development practicals.">
+  <title>BOSSCODER Web Development Lab | P5–P13</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="index.html">MyPortfolio<span>.</span></a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a><a href="bio.html">Bio</a>
-      <a href="portfolio.html">Portfolio</a><a href="newspaper.html">Grid Lab</a>
-      <a href="layout-choice.html">P13</a>
+    <a class="brand" href="index.html">Sarang Bodhe<span>.</span></a>
+    <nav class="main-nav" aria-label="Practical pages">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="bio.html">P5 Bio</a>
+      <a href="portfolio.html">P6–P7 Portfolio</a>
+      <a href="positioning.html">P8 Positioning</a>
+      <a href="flexbox.html">P9–P10 Flexbox</a>
+      <a href="newspaper.html">P11 Grid</a>
+      <a href="projects.html">P12 Projects</a>
+      <a href="layout-choice.html">P13 Layout choice</a>
     </nav>
   </header>
-  <main class="container">
-    <section class="hero">
-      <p class="eyebrow">PROGRAMMING FOR WEB DEVELOPMENT – I</p>
-      <h1>HTML & CSS Practical Portfolio</h1>
-      <p>One project demonstrating semantic HTML, design tokens, positioning, Flexbox and CSS Grid.</p>
-      <a class="button" href="portfolio.html">Explore practicals</a>
+  <main class="container" id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Programming for Web Development · Laboratory</p>
+      <h1 id="page-title">HTML &amp; CSS practical portfolio</h1>
+      <p class="lead">A connected set of practical pages demonstrating semantic HTML, reusable design tokens, positioning, Flexbox, and CSS Grid.</p>
+      <a class="button" href="portfolio.html">Explore the portfolio</a>
     </section>
-    <section>
-      <h2>Practical index</h2>
+    <section aria-labelledby="practicals-heading">
+      <p class="eyebrow">Module 2 and Module 3</p>
+      <h2 id="practicals-heading">Practical index</h2>
       <div class="link-grid">
-        <a class="panel" href="bio.html"><strong>P5</strong><span>Semantic bio page</span></a>
-        <a class="panel" href="portfolio.html"><strong>P6–P7</strong><span>Portfolio structure, tokens and typography</span></a>
-        <a class="panel" href="positioning.html"><strong>P8</strong><span>Sticky navbar and card overlay</span></a>
-        <a class="panel" href="flexbox.html"><strong>P9–P10</strong><span>Responsive navbar, cards, header and footer</span></a>
-        <a class="panel" href="newspaper.html"><strong>P11</strong><span>Three-column newspaper CSS Grid</span></a>
-        <a class="panel" href="projects.html"><strong>P12</strong><span>Advanced project grid</span></a>
-        <a class="panel" href="layout-choice.html"><strong>P13</strong><span>Flexbox vs Grid shared layout</span></a>
+        <a class="panel" href="bio.html"><strong>P5</strong><span>Semantic biography, education, skills, interests, goals, and contact.</span></a>
+        <a class="panel" href="portfolio.html"><strong>P6–P7</strong><span>Semantic portfolio sections and a shared token-based design system.</span></a>
+        <a class="panel" href="positioning.html"><strong>P8</strong><span>Static, relative, absolute, fixed, and sticky positioning.</span></a>
+        <a class="panel" href="flexbox.html"><strong>P9–P10</strong><span>Responsive Flexbox cards, header, navigation, and footer.</span></a>
+        <a class="panel" href="newspaper.html"><strong>P11</strong><span>Responsive three-column newspaper layout with Grid areas.</span></a>
+        <a class="panel" href="projects.html"><strong>P12</strong><span>Featured projects, responsive Grid, auto-fit, and auto-fill.</span></a>
+        <a class="panel" href="layout-choice.html"><strong>P13</strong><span>Flexbox and Grid examples with a comparison table.</span></a>
       </div>
     </section>
+    <section aria-labelledby="about-assignment">
+      <h2 id="about-assignment">About this submission</h2>
+      <p>This repository belongs to <strong>Sarang Bodhe</strong>. Personal facts not provided for the assignment are identified as details to fill in, rather than presented as completed claims.</p>
+      <p>Module 1 terminal and Git instructions are documented in the repository's <a href="../P1-P4-Git-Workflow.md">P1–P4 Git workflow guide</a>.</p>
+    </section>
   </main>
-  <footer class="site-footer"><p>© 2026 Student Portfolio · Built for P5–P13</p></footer>
+  <footer class="site-footer">
+    <p class="footer-brand"><strong>Sarang Bodhe</strong><br>Web development laboratory · P1–P13</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="bio.html">Bio</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+    <p>© 2026 Sarang Bodhe</p>
+  </footer>
 </body>
 </html>

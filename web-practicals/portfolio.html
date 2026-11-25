@@ -1,6 +1,72 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P6–P7 – Portfolio</title><link rel="stylesheet" href="css/styles.css"></head><body>
-<header class="site-header"><a class="brand" href="index.html">MyPortfolio<span>.</span></a><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="bio.html">About</a><a href="projects.html">Projects</a></nav></header>
-<main class="container"><section class="hero"><p class="eyebrow">P6 · SEMANTIC PORTFOLIO STRUCTURE / P7 · CSS TOKENS</p><h1>Building useful things for the web.</h1><p>A student portfolio demonstrating semantic page regions and a reusable CSS design system.</p></section>
-<section><h2>About this portfolio</h2><p>This page uses semantic <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code> and <code>footer</code> elements. Design tokens such as <code>--color-primary</code>, <code>--space-2</code> and <code>--font-heading</code> are defined in the shared stylesheet.</p></section>
-<section><h2>Skills I'm developing</h2><div class="card-grid"><article class="card"><h3>HTML</h3><p>Semantic and accessible document structure.</p></article><article class="card"><h3>CSS</h3><p>Responsive styling, layout and typography.</p></article><article class="card"><h3>Git</h3><p>Version control and collaborative workflows.</p></article></div></section></main>
-<footer class="site-footer"><p>© 2026 Your Name · Portfolio</p></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Semantic portfolio page and reusable design system practical.">
+  <title>P6–P7 — Portfolio | Sarang Bodhe</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Sarang Bodhe<span>.</span></a>
+    <nav class="main-nav" aria-label="Practical pages">
+      <a href="index.html">Home</a><a href="bio.html">P5 Bio</a>
+      <a href="portfolio.html" aria-current="page">P6–P7 Portfolio</a><a href="positioning.html">P8 Positioning</a>
+      <a href="flexbox.html">P9–P10 Flexbox</a><a href="newspaper.html">P11 Grid</a>
+      <a href="projects.html">P12 Projects</a><a href="layout-choice.html">P13 Layout choice</a>
+    </nav>
+    <a class="header-cta" href="bio.html#contact">Contact</a>
+  </header>
+  <main class="container" id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">P6 · Semantic portfolio structure · P7 · CSS design tokens</p>
+      <h1 id="page-title">Learning to build for the web.</h1>
+      <p class="lead">I'm Sarang Bodhe. This portfolio is a practical demonstration of semantic page structure and a reusable CSS system.</p>
+      <a class="button" href="projects.html">See practical projects</a>
+      <a class="button" href="bio.html#contact">Contact details</a>
+    </section>
+    <section id="about" aria-labelledby="about-heading">
+      <p class="eyebrow">Introduction</p>
+      <h2 id="about-heading">About</h2>
+      <article class="card">
+        <p>I am working through the BOSSCODER web development laboratory. The pages here demonstrate the concepts in the assignment; project examples link to those practical pages rather than claiming unrelated work.</p>
+        <p>Personal education and contact details can be edited on the <a href="bio.html">biography page</a>.</p>
+      </article>
+    </section>
+    <section id="skills" aria-labelledby="skills-heading">
+      <p class="eyebrow">Current learning</p>
+      <h2 id="skills-heading">Skills in practice</h2>
+      <div class="card-grid">
+        <article class="card"><h3>Semantic HTML</h3><p>Organizing content with landmarks, sections, headings, lists, and links.</p></article>
+        <article class="card"><h3>CSS foundations</h3><p>Applying design tokens, typography, spacing, and responsive styles.</p></article>
+        <article class="card"><h3>Layout systems</h3><p>Using Flexbox for one-dimensional alignment and Grid for rows and columns.</p></article>
+      </div>
+    </section>
+    <section id="projects" aria-labelledby="projects-heading">
+      <p class="eyebrow">Work in this repository</p>
+      <h2 id="projects-heading">Practical projects</h2>
+      <div class="card-grid">
+        <article class="card"><h3>Flexbox lab</h3><p>A responsive header and wrapping card layout.</p><a href="flexbox.html">Open P9–P10</a></article>
+        <article class="card"><h3>Newspaper grid</h3><p>A responsive editorial layout using named grid areas.</p><a href="newspaper.html">Open P11</a></article>
+        <article class="card"><h3>Projects grid</h3><p>Featured and responsive project cards using CSS Grid.</p><a href="projects.html">Open P12</a></article>
+      </div>
+    </section>
+    <section id="education" aria-labelledby="education-heading">
+      <p class="eyebrow">Personal information</p>
+      <h2 id="education-heading">Education</h2>
+      <p>Add your institution, program, and study dates here. They were not provided in the assignment context.</p>
+    </section>
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Update your contact details on the <a href="bio.html#contact">biography page</a> before sharing this portfolio.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="footer-brand"><strong>Sarang Bodhe</strong><br>Student web development practicals</p>
+    <nav class="footer-nav" aria-label="Footer navigation"><a href="bio.html">Bio</a><a href="projects.html">Projects</a><a href="layout-choice.html">Layout comparison</a></nav>
+    <p>© 2026 Sarang Bodhe</p>
+  </footer>
+</body>
+</html>

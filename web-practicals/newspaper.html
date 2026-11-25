@@ -1,3 +1,57 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>P11 – Newspaper Grid</title><link rel="stylesheet" href="css/styles.css"></head><body>
-<header class="site-header"><a class="brand" href="index.html">The Student Times<span>.</span></a><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="projects.html">Technology</a></nav></header>
-<main class="container"><p class="eyebrow">P11 · THREE-COLUMN NEWSPAPER LAYOUT WITH CSS GRID</p><h1>Campus & Technology</h1><div class="news-grid"><article class="article lead"><p class="eyebrow">FEATURE STORY</p><h2>Learning web development by building projects</h2><p>A practical approach to learning combines clear fundamentals with small projects. Semantic HTML gives content meaning, while CSS controls presentation and layout.</p><p>CSS Grid is useful for two-dimensional layouts because it controls rows and columns together. A newspaper page is a natural example: one lead story can span multiple rows while smaller stories occupy neighboring columns.</p></article><article class="article"><h2>HTML foundations</h2><p>Use meaningful elements to structure a page.</p></article><article class="article"><h2>CSS systems</h2><p>Reusable tokens help maintain consistent design.</p></article><article class="article"><h2>Flexbox</h2><p>Use Flexbox to align items along one main axis.</p></article><article class="article"><h2>Grid</h2><p>Use Grid for rows and columns together.</p></article></div></main><footer class="site-footer"><p>Student Times · Layout practice</p></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Responsive newspaper-style three-column CSS Grid practical.">
+  <title>P11 — Newspaper Grid | Sarang Bodhe</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">The Student Times<span>.</span></a>
+    <nav class="main-nav" aria-label="Practical pages">
+      <a href="index.html">Home</a><a href="bio.html">P5 Bio</a><a href="portfolio.html">P6–P7 Portfolio</a>
+      <a href="positioning.html">P8 Positioning</a><a href="flexbox.html">P9–P10 Flexbox</a>
+      <a href="newspaper.html" aria-current="page">P11 Grid</a><a href="projects.html">P12 Projects</a><a href="layout-choice.html">P13 Layout choice</a>
+    </nav>
+  </header>
+  <main class="container" id="main">
+    <p class="eyebrow">P11 · Three-column newspaper layout with CSS Grid</p>
+    <h1>Campus &amp; technology</h1>
+    <p class="lead">A sample editorial page demonstrating named grid areas, column and row placement, and responsive reflow.</p>
+    <section class="news-grid" aria-label="Newspaper articles">
+      <article class="article lead">
+        <p class="eyebrow">Feature story</p>
+        <h2>Learning web development by building practical projects</h2>
+        <p>A practical approach to learning pairs clear fundamentals with small projects. Semantic HTML gives content meaning, while CSS controls presentation and layout.</p>
+        <p>CSS Grid is useful for two-dimensional layouts because it controls rows and columns together. Here, the lead story spans two columns and rows, while supporting stories occupy named areas beside it.</p>
+      </article>
+      <article class="article story-a">
+        <p class="eyebrow">Foundations</p>
+        <h2>HTML with meaning</h2>
+        <p>Landmarks and headings make a page easier to understand and navigate.</p>
+      </article>
+      <article class="article story-b">
+        <p class="eyebrow">Layout</p>
+        <h2>CSS Grid for structure</h2>
+        <p>Named areas make a complex editorial layout easier to describe.</p>
+      </article>
+      <aside class="article side-stories" aria-labelledby="briefs-heading">
+        <h2 id="briefs-heading">In brief</h2>
+        <ul class="details-list">
+          <li>Use Flexbox for one-dimensional alignment.</li>
+          <li>Use Grid for coordinated rows and columns.</li>
+          <li>Test layouts at narrow screen widths.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="footer-brand"><strong>The Student Times</strong><br>P11 · CSS Grid practical</p>
+    <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Practical index</a><a href="projects.html">P12 Projects</a></nav>
+    <p>© 2026 Sarang Bodhe</p>
+  </footer>
+</body>
+</html>
