@@ -63,7 +63,7 @@ The configured repository link is [github.com/codewithsarang/BOSSCODER-P1-P13_](
 - [x] Browser reported no JavaScript/page errors; the pages use no JavaScript and contain no images.
 - [ ] Replace the clearly marked email and education details on the biography page.
 - [ ] Capture requested screenshots yourself.
-- [ ] Verify `main`, `feature/about-section`, and `v1.0.0` locally and remotely after publishing.
+- [x] Verified `main`, `feature/about-section`, and `v1.0.0` locally and remotely after publishing.
 
 ### Executed checks
 
@@ -72,6 +72,7 @@ The configured repository link is [github.com/codewithsarang/BOSSCODER-P1-P13_](
 - Checked CSS Grid column changes for the newspaper and projects pages and Flexbox wrapping for the card row at all three viewport widths.
 - Confirmed sticky-header and fixed-control behavior on P8.
 - `git diff --check` passed.
+- At release verification, GitHub had `main` at `362f732`, `feature/about-section` at `cc355dc`, and annotated tag `v1.0.0` pointing to the `main` merge commit.
 - HTML Tidy is installed, but this machine's binary is a 2006 build that reports HTML5 elements such as `header` and `nav` as unsupported. Its output is therefore not treated as an HTML5 validation result. The browser parser rendered all pages successfully; no external validator result is claimed.
 
 ## Remaining personal submission steps
