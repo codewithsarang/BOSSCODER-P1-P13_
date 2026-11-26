@@ -3,70 +3,181 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Semantic portfolio page and reusable design system practical.">
-  <title>P6–P7 — Portfolio | Sarang Bodhe</title>
+  <meta name="description" content="Sarang Bodhe's portfolio of BOSSCODER web development practicals, built with HTML and CSS.">
+  <title>Sarang Bodhe | Web Development Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="portfolio-page" id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="index.html">Sarang Bodhe<span>.</span></a>
-    <nav class="main-nav" aria-label="Practical pages">
-      <a href="index.html">Home</a><a href="bio.html">P5 Bio</a>
-      <a href="portfolio.html" aria-current="page">P6–P7 Portfolio</a><a href="positioning.html">P8 Positioning</a>
-      <a href="flexbox.html">P9–P10 Flexbox</a><a href="newspaper.html">P11 Grid</a>
-      <a href="projects.html">P12 Projects</a><a href="layout-choice.html">P13 Layout choice</a>
+  <header class="site-header portfolio-header">
+    <a class="brand portfolio-brand" href="portfolio.html" aria-label="Sarang Bodhe, portfolio home">SB<span>.</span></a>
+    <nav class="main-nav portfolio-nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="index.html">Practicals</a>
     </nav>
-    <a class="header-cta" href="bio.html#contact">Contact</a>
+    <a class="header-cta" href="https://github.com/codewithsarang/BOSSCODER-P1-P13_" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
   </header>
-  <main class="container" id="main">
-    <section class="hero" aria-labelledby="page-title">
-      <p class="eyebrow">P6 · Semantic portfolio structure · P7 · CSS design tokens</p>
-      <h1 id="page-title">Learning to build for the web.</h1>
-      <p class="lead">I'm Sarang Bodhe. This portfolio is a practical demonstration of semantic page structure and a reusable CSS system.</p>
-      <a class="button" href="projects.html">See practical projects</a>
-      <a class="button" href="bio.html#contact">Contact details</a>
+
+  <main class="container portfolio-main" id="main">
+    <section class="portfolio-hero" aria-labelledby="page-title">
+      <div class="portfolio-hero-copy">
+        <p class="eyebrow">Sarang Bodhe <span aria-hidden="true">/</span> Web development student</p>
+        <h1 id="page-title">Learning the web,<br><span>one practical at a time.</span></h1>
+        <p class="portfolio-intro">This portfolio brings together my BOSSCODER P1–P13 work: semantic HTML, thoughtful CSS, and hands-on practice with Git, Flexbox, and Grid.</p>
+        <div class="portfolio-actions">
+          <a class="button" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
+          <a class="portfolio-text-link" href="https://github.com/codewithsarang/BOSSCODER-P1-P13_" target="_blank" rel="noopener noreferrer">View GitHub repository <span aria-hidden="true">↗</span></a>
+        </div>
+        <ul class="portfolio-tags" aria-label="Technologies used">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Git &amp; GitHub</li>
+        </ul>
+      </div>
+      <aside class="portfolio-visual" aria-label="Assignment overview: thirteen practicals across three modules">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-center">
+          <span class="visual-number">13</span>
+          <span class="visual-caption">practicals</span>
+        </div>
+        <span class="visual-chip chip-html">HTML</span>
+        <span class="visual-chip chip-css">CSS</span>
+        <span class="visual-chip chip-git">GIT</span>
+        <span class="visual-note">Learn by building<br>and improving.</span>
+      </aside>
     </section>
-    <section id="about" aria-labelledby="about-heading">
-      <p class="eyebrow">Introduction</p>
-      <h2 id="about-heading">About</h2>
-      <article class="card">
-        <p>I am working through the BOSSCODER web development laboratory. The pages here demonstrate the concepts in the assignment; project examples link to those practical pages rather than claiming unrelated work.</p>
-        <p>Personal education and contact details can be edited on the <a href="bio.html">biography page</a>.</p>
-      </article>
-    </section>
-    <section id="skills" aria-labelledby="skills-heading">
-      <p class="eyebrow">Current learning</p>
-      <h2 id="skills-heading">Skills in practice</h2>
-      <div class="card-grid">
-        <article class="card"><h3>Semantic HTML</h3><p>Organizing content with landmarks, sections, headings, lists, and links.</p></article>
-        <article class="card"><h3>CSS foundations</h3><p>Applying design tokens, typography, spacing, and responsive styles.</p></article>
-        <article class="card"><h3>Layout systems</h3><p>Using Flexbox for one-dimensional alignment and Grid for rows and columns.</p></article>
+
+    <section class="portfolio-skills" id="skills" aria-labelledby="skills-heading">
+      <div class="skills-heading">
+        <p class="eyebrow">Learning focus</p>
+        <h2 id="skills-heading">Foundations I’m practicing</h2>
+      </div>
+      <div class="skills-list">
+        <article>
+          <span class="skill-index">01</span>
+          <div><h3>Semantic HTML</h3><p>Clear structure and accessible page landmarks.</p></div>
+        </article>
+        <article>
+          <span class="skill-index">02</span>
+          <div><h3>CSS &amp; layout</h3><p>Responsive design with reusable styles, Flexbox, and Grid.</p></div>
+        </article>
+        <article>
+          <span class="skill-index">03</span>
+          <div><h3>Git workflow</h3><p>Branches, commits, and publishing work with GitHub.</p></div>
+        </article>
       </div>
     </section>
-    <section id="projects" aria-labelledby="projects-heading">
-      <p class="eyebrow">Work in this repository</p>
-      <h2 id="projects-heading">Practical projects</h2>
-      <div class="card-grid">
-        <article class="card"><h3>Flexbox lab</h3><p>A responsive header and wrapping card layout.</p><a href="flexbox.html">Open P9–P10</a></article>
-        <article class="card"><h3>Newspaper grid</h3><p>A responsive editorial layout using named grid areas.</p><a href="newspaper.html">Open P11</a></article>
-        <article class="card"><h3>Projects grid</h3><p>Featured and responsive project cards using CSS Grid.</p><a href="projects.html">Open P12</a></article>
+
+    <section class="portfolio-work" id="work" aria-labelledby="work-heading">
+      <div class="portfolio-section-heading">
+        <div>
+          <p class="eyebrow">A guided learning journey</p>
+          <h2 id="work-heading">Selected work</h2>
+        </div>
+        <p>One course project, built across three modules. Choose a practical to see what I worked on.</p>
+      </div>
+
+      <div class="portfolio-project-grid">
+        <article class="portfolio-project project-git">
+          <div class="project-topline"><span>MODULE 01</span><span>01 — 04</span></div>
+          <div class="project-icon icon-git" aria-hidden="true"><span>⌘</span></div>
+          <h3>Terminal, Git &amp; GitHub</h3>
+          <p>Project navigation, repository setup, a feature-branch workflow, and version tagging.</p>
+          <a href="../P1-P4-Git-Workflow.md">Read the workflow guide <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="portfolio-project project-bio">
+          <div class="project-topline"><span>MODULE 02</span><span>05</span></div>
+          <div class="project-icon icon-bio" aria-hidden="true"><span>SB</span></div>
+          <h3>A semantic introduction</h3>
+          <p>A biography page organized with meaningful HTML sections and accessible links.</p>
+          <a href="bio.html">View the biography page <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="portfolio-project project-portfolio">
+          <div class="project-topline"><span>MODULE 02</span><span>06 — 07</span></div>
+          <div class="project-icon icon-design" aria-hidden="true"><span>◫</span></div>
+          <h3>Portfolio &amp; design system</h3>
+          <p>A complete portfolio structure supported by reusable CSS tokens and typography.</p>
+          <a href="#top">You’re viewing it <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="portfolio-project project-position">
+          <div class="project-topline"><span>MODULE 02</span><span>08</span></div>
+          <div class="project-icon icon-position" aria-hidden="true"><span>⊙</span></div>
+          <h3>Positioning in practice</h3>
+          <p>Sticky and fixed elements, a positioned overlay, and examples of stacking.</p>
+          <a href="positioning.html">View the positioning demo <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="portfolio-project project-flex">
+          <div class="project-topline"><span>MODULE 02–03</span><span>09 — 10</span></div>
+          <div class="project-icon icon-flex" aria-hidden="true"><span>↔</span></div>
+          <h3>Responsive Flexbox</h3>
+          <p>A responsive navigation, wrapping cards, and flexible header and footer layouts.</p>
+          <a href="flexbox.html">View the Flexbox practical <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="portfolio-project project-newspaper">
+          <div class="project-topline"><span>MODULE 03</span><span>11</span></div>
+          <div class="project-icon icon-grid" aria-hidden="true"><span>▦</span></div>
+          <h3>Newspaper with CSS Grid</h3>
+          <p>A responsive editorial layout using three columns and named grid areas.</p>
+          <a href="newspaper.html">View the newspaper layout <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="portfolio-project project-grid">
+          <div class="project-topline"><span>MODULE 03</span><span>12</span></div>
+          <div class="project-icon icon-projects" aria-hidden="true"><span>▤</span></div>
+          <h3>Projects grid</h3>
+          <p>Featured cards and responsive tracks using modern CSS Grid sizing.</p>
+          <a href="projects.html">View the projects grid <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="portfolio-project project-choice">
+          <div class="project-topline"><span>MODULE 03</span><span>13</span></div>
+          <div class="project-icon icon-choice" aria-hidden="true"><span>↗</span></div>
+          <h3>Flexbox or Grid?</h3>
+          <p>A side-by-side demonstration of when each layout tool is a good fit.</p>
+          <a href="layout-choice.html">Compare the two layouts <span aria-hidden="true">↗</span></a>
+        </article>
       </div>
     </section>
-    <section id="education" aria-labelledby="education-heading">
-      <p class="eyebrow">Personal information</p>
-      <h2 id="education-heading">Education</h2>
-      <p>Add your institution, program, and study dates here. They were not provided in the assignment context.</p>
+
+    <section class="portfolio-about" id="about" aria-labelledby="about-heading">
+      <div class="about-mark" aria-hidden="true">SB<span>.</span></div>
+      <div class="about-copy">
+        <p class="eyebrow">A little about this work</p>
+        <h2 id="about-heading">Built with curiosity<br>and the fundamentals.</h2>
+        <p>I’m Sarang Bodhe, and this project documents my progress through the BOSSCODER web development laboratory. I focused on semantic page structure, responsive layouts, and making each practical easy to explore.</p>
+        <p>The examples are part of this assignment—not claims of client or employment work. I’m continuing to learn by building, testing, and refining.</p>
+      </div>
+      <aside class="about-facts" aria-label="Project details">
+        <div><span>COURSE WORK</span><strong>BOSSCODER · P1–P13</strong></div>
+        <div><span>BUILT WITH</span><strong>HTML · CSS · Git</strong></div>
+        <div><span>FOCUS</span><strong>Responsive web foundations</strong></div>
+        <div><span>EDUCATION</span><strong>Add your details before sharing</strong></div>
+      </aside>
     </section>
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-      <p>Update your contact details on the <a href="bio.html#contact">biography page</a> before sharing this portfolio.</p>
+
+    <section class="portfolio-contact" id="contact" aria-labelledby="contact-heading">
+      <p class="eyebrow">Keep exploring</p>
+      <h2 id="contact-heading">The code is open.<br>Take a look around.</h2>
+      <p>Browse the complete assignment repository or return to the practical index.</p>
+      <div class="portfolio-actions">
+        <a class="button" href="https://github.com/codewithsarang/BOSSCODER-P1-P13_" target="_blank" rel="noopener noreferrer">Open the repository <span aria-hidden="true">↗</span></a>
+        <a class="portfolio-text-link" href="index.html">Browse all practicals <span aria-hidden="true">→</span></a>
+      </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <p class="footer-brand"><strong>Sarang Bodhe</strong><br>Student web development practicals</p>
-    <nav class="footer-nav" aria-label="Footer navigation"><a href="bio.html">Bio</a><a href="projects.html">Projects</a><a href="layout-choice.html">Layout comparison</a></nav>
-    <p>© 2026 Sarang Bodhe</p>
+
+  <footer class="portfolio-footer">
+    <a class="brand portfolio-brand" href="#top">Sarang Bodhe<span>.</span></a>
+    <p>Learning the web, one practical at a time.</p>
+    <a href="https://github.com/codewithsarang" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    <span>© 2026 Sarang Bodhe</span>
   </footer>
 </body>
 </html>

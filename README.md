@@ -17,7 +17,7 @@ This repository contains the practical work for the BOSSCODER School of Technolo
 | P3 | Feature branch, commit, push, and merge workflow | [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md), `feature/about-section` branch |
 | P4 | README, annotated version tag, and GitHub remote | [README.md](./README.md), [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md) |
 | P5 | Semantic biography with education, skills, interests, goals, and contact | [web-practicals/bio.html](./web-practicals/bio.html) |
-| P6 | Full semantic portfolio structure | [web-practicals/portfolio.html](./web-practicals/portfolio.html) |
+| P6 | Project-focused portfolio with an introduction, practical work, about section, and GitHub links | [web-practicals/portfolio.html](./web-practicals/portfolio.html) |
 | P7 | Centralized design tokens and typography | [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
 | P8 | Sticky navigation, fixed control, positioning modes, overlay, and stacking | [web-practicals/positioning.html](./web-practicals/positioning.html), [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
 | P9 | Responsive navigation and wrapping Flexbox cards | [web-practicals/flexbox.html](./web-practicals/flexbox.html), [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
@@ -57,8 +57,8 @@ This repository contains the practical work for the BOSSCODER School of Technolo
 ## Run locally
 
 1. Clone the repository or open this repository folder in VS Code.
-2. Open `web-practicals/index.html` directly in a browser, or use VS Code Live Server if installed.
-3. Use the site navigation or practical index to open P5–P13.
+2. Open `web-practicals/portfolio.html` for the portfolio, or `web-practicals/index.html` for the practical index.
+3. Use the portfolio cards or practical index to open P5–P13.
 4. Resize the browser or use Developer Tools to inspect desktop (1440px), tablet (768px), and mobile (375px) layouts.
 
 For Terminal navigation and Git exercises, follow [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md).

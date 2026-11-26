@@ -9,7 +9,7 @@
 | P3 | Feature branch and safe merge workflow | [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md), `feature/about-section` |
 | P4 | README, GitHub remote, and version tag workflow | [README.md](./README.md), [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md) |
 | P5 | Semantic biography and personal information sections | [web-practicals/bio.html](./web-practicals/bio.html) |
-| P6 | Semantic portfolio page with hero, about, skills, projects, education, and contact | [web-practicals/portfolio.html](./web-practicals/portfolio.html) |
+| P6 | Project portfolio with introduction, practical cards, about section, and GitHub links | [web-practicals/portfolio.html](./web-practicals/portfolio.html) |
 | P7 | CSS tokens and type scale | [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
 | P8 | Positioning modes, sticky navigation, fixed link, overlay, and z-index | [web-practicals/positioning.html](./web-practicals/positioning.html), [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
 | P9 | Responsive navigation and flexible card row | [web-practicals/flexbox.html](./web-practicals/flexbox.html), [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
@@ -20,7 +20,7 @@
 
 ## How to run
 
-Open `web-practicals/index.html` in a browser, or open the repository in VS Code and use Live Server if installed. No build step or external packages are required. Follow [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md) for command-line practicals.
+Open `web-practicals/portfolio.html` for the project portfolio or `web-practicals/index.html` for the practical index in a browser. You can also open the repository in VS Code and use Live Server if installed. No build step or external packages are required. Follow [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md) for command-line practicals.
 
 ## Screenshot checklist
 
@@ -56,6 +56,7 @@ The configured repository link is [github.com/codewithsarang/BOSSCODER-P1-P13_](
 
 - [x] P1–P13 instructions and page content reviewed.
 - [x] Opened every P5–P13 HTML page in the browser; the shared stylesheet loaded.
+- [x] Checked the project portfolio at 1440px, 768px, and 375px.
 - [x] Checked local navigation links and same-page/cross-page anchors.
 - [x] Checked responsive layouts at 1440px, 768px, and 375px.
 - [x] Confirmed no horizontal overflow at those widths; the responsive Grid and Flexbox tracks adapt as intended.
@@ -68,6 +69,7 @@ The configured repository link is [github.com/codewithsarang/BOSSCODER-P1-P13_](
 ### Executed checks
 
 - Browser-tested all eight practical HTML pages at 1440px, 768px, and 375px. All rendered with the shared stylesheet; `scrollWidth` matched the viewport width on every page and each viewport.
+- Browser-tested the project portfolio at 1440px, 768px, and 375px. Its eight practical cards remained visible, no horizontal overflow occurred, and the browser reported no errors.
 - Checked navigation targets and anchors with a local link checker; all resolved.
 - Checked CSS Grid column changes for the newspaper and projects pages and Flexbox wrapping for the card row at all three viewport widths.
 - Confirmed sticky-header and fixed-control behavior on P8.
