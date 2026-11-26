@@ -3,181 +3,198 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sarang Bodhe's portfolio of BOSSCODER web development practicals, built with HTML and CSS.">
-  <title>Sarang Bodhe | Web Development Portfolio</title>
+  <meta name="description" content="Sarang Bodhe's web development practicals and selected public GitHub work.">
+  <title>Sarang Bodhe — Learning by Building</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="portfolio-page" id="top">
+<body class="ep-page" id="home">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header portfolio-header">
-    <a class="brand portfolio-brand" href="portfolio.html" aria-label="Sarang Bodhe, portfolio home">SB<span>.</span></a>
-    <nav class="main-nav portfolio-nav" aria-label="Main navigation">
-      <a href="#work">Work</a>
+  <header class="ep-header">
+    <a class="ep-monogram" href="#home" aria-label="Sarang Bodhe, home">sb.</a>
+    <nav class="ep-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="index.html">Practicals</a>
+      <a href="#practicals">Practicals</a>
+      <a href="#projects">Projects</a>
+      <a href="https://github.com/codewithsarang" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </nav>
-    <a class="header-cta" href="https://github.com/codewithsarang/BOSSCODER-P1-P13_" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
   </header>
 
-  <main class="container portfolio-main" id="main">
-    <section class="portfolio-hero" aria-labelledby="page-title">
-      <div class="portfolio-hero-copy">
-        <p class="eyebrow">Sarang Bodhe <span aria-hidden="true">/</span> Web development student</p>
-        <h1 id="page-title">Learning the web,<br><span>one practical at a time.</span></h1>
-        <p class="portfolio-intro">This portfolio brings together my BOSSCODER P1–P13 work: semantic HTML, thoughtful CSS, and hands-on practice with Git, Flexbox, and Grid.</p>
-        <div class="portfolio-actions">
-          <a class="button" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
-          <a class="portfolio-text-link" href="https://github.com/codewithsarang/BOSSCODER-P1-P13_" target="_blank" rel="noopener noreferrer">View GitHub repository <span aria-hidden="true">↗</span></a>
+  <main class="ep-main" id="main">
+    <section class="ep-hero" aria-labelledby="page-title">
+      <p class="ep-kicker">WEB DEVELOPMENT · LEARNING PORTFOLIO</p>
+      <h1 id="page-title">Sarang Bodhe<span>.</span></h1>
+      <h2>Learning by building.</h2>
+      <p class="ep-intro">I’m learning web development one practical at a time. This is where I’ve collected my BOSSCODER work—from first Git commands to responsive pages built with Flexbox and Grid.</p>
+      <div class="ep-actions">
+        <a class="ep-button ep-button-dark" href="https://github.com/codewithsarang/BOSSCODER-P1-P13_" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span></a>
+        <a class="ep-button ep-button-light" href="#practicals">Explore the work <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="ep-stats" aria-label="Portfolio overview">
+      <div><strong>13</strong><span>Practical exercises</span></div>
+      <div><strong>03</strong><span>Learning modules</span></div>
+      <div><strong>01</strong><span>Public portfolio repo</span></div>
+    </section>
+
+    <section class="ep-about" id="about" aria-labelledby="about-heading">
+      <div class="ep-about-photo">
+        <img src="assets/github-avatar.jpg" alt="GitHub profile avatar for codewithsarang" width="160" height="160" loading="lazy">
+        <span class="ep-photo-caption">The person behind the commits</span>
+      </div>
+      <div class="ep-about-copy">
+        <p class="ep-kicker">A LITTLE ABOUT ME</p>
+        <h2 id="about-heading">Still learning.<br>Still making things.</h2>
+        <p>I’m Sarang. I like learning by trying something, seeing what breaks, and making it a little better. These pages are part of that process: simple web exercises that helped me get comfortable with the basics.</p>
+        <p>My public GitHub profile describes me as an open-source contributor and lists Bangalore as my location. This portfolio sticks to what I can show here: the course work below and the public repositories on my account.</p>
+        <div class="ep-profile-facts">
+          <a href="https://github.com/codewithsarang" target="_blank" rel="noopener noreferrer">@codewithsarang <span aria-hidden="true">↗</span></a>
+          <span>Bangalore</span>
+          <span>Open-source contributor</span>
         </div>
-        <ul class="portfolio-tags" aria-label="Technologies used">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Git &amp; GitHub</li>
+        <ul class="ep-skill-tags" aria-label="Technologies used in this assignment">
+          <li>HTML</li><li>CSS</li><li>Git</li><li>GitHub</li><li>Flexbox</li><li>Grid</li>
         </ul>
       </div>
-      <aside class="portfolio-visual" aria-label="Assignment overview: thirteen practicals across three modules">
-        <div class="visual-orbit orbit-one"></div>
-        <div class="visual-orbit orbit-two"></div>
-        <div class="visual-center">
-          <span class="visual-number">13</span>
-          <span class="visual-caption">practicals</span>
-        </div>
-        <span class="visual-chip chip-html">HTML</span>
-        <span class="visual-chip chip-css">CSS</span>
-        <span class="visual-chip chip-git">GIT</span>
-        <span class="visual-note">Learn by building<br>and improving.</span>
-      </aside>
     </section>
 
-    <section class="portfolio-skills" id="skills" aria-labelledby="skills-heading">
-      <div class="skills-heading">
-        <p class="eyebrow">Learning focus</p>
-        <h2 id="skills-heading">Foundations I’m practicing</h2>
-      </div>
-      <div class="skills-list">
-        <article>
-          <span class="skill-index">01</span>
-          <div><h3>Semantic HTML</h3><p>Clear structure and accessible page landmarks.</p></div>
-        </article>
-        <article>
-          <span class="skill-index">02</span>
-          <div><h3>CSS &amp; layout</h3><p>Responsive design with reusable styles, Flexbox, and Grid.</p></div>
-        </article>
-        <article>
-          <span class="skill-index">03</span>
-          <div><h3>Git workflow</h3><p>Branches, commits, and publishing work with GitHub.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="portfolio-work" id="work" aria-labelledby="work-heading">
-      <div class="portfolio-section-heading">
+    <section class="ep-work" id="practicals" aria-labelledby="work-heading">
+      <div class="ep-section-heading">
         <div>
-          <p class="eyebrow">A guided learning journey</p>
-          <h2 id="work-heading">Selected work</h2>
+          <p class="ep-kicker">THE WORK</p>
+          <h2 id="work-heading">Web development practicals</h2>
         </div>
-        <p>One course project, built across three modules. Choose a practical to see what I worked on.</p>
+        <p>Thirteen small steps, grouped the way I learned them. Open any page to see the idea in practice.</p>
       </div>
 
-      <div class="portfolio-project-grid">
-        <article class="portfolio-project project-git">
-          <div class="project-topline"><span>MODULE 01</span><span>01 — 04</span></div>
-          <div class="project-icon icon-git" aria-hidden="true"><span>⌘</span></div>
-          <h3>Terminal, Git &amp; GitHub</h3>
-          <p>Project navigation, repository setup, a feature-branch workflow, and version tagging.</p>
-          <a href="../P1-P4-Git-Workflow.md">Read the workflow guide <span aria-hidden="true">↗</span></a>
-        </article>
+      <section class="ep-module" aria-labelledby="module-one">
+        <div class="ep-module-heading">
+          <span class="ep-module-number">01</span>
+          <div><p class="ep-kicker">STARTING WITH THE TOOLS</p><h3 id="module-one">Terminal, Git &amp; GitHub</h3></div>
+          <span class="ep-module-count">P1 — P4</span>
+        </div>
+        <div class="ep-practical-grid ep-grid-four">
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P01</span><h4>Finding my way around</h4>
+            <p>Getting comfortable with folders and the Terminal commands I use to move around.</p>
+            <a href="https://github.com/codewithsarang/BOSSCODER-P1-P13_/blob/main/P1-P4-Git-Workflow.md">Read the guide <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P02</span><h4>Making a first commit</h4>
+            <p>Putting project files under version control and saving a first snapshot.</p>
+            <a href="https://github.com/codewithsarang/BOSSCODER-P1-P13_/commits/main/">See repository history <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P03</span><h4>Working on a branch</h4>
+            <p>Making a change on a feature branch, then reviewing and merging it safely.</p>
+            <a href="https://github.com/codewithsarang/BOSSCODER-P1-P13_/tree/feature/about-section">See feature branch <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P04</span><h4>Writing it down</h4>
+            <p>Documenting the project and learning how version tags mark a release.</p>
+            <a href="https://github.com/codewithsarang/BOSSCODER-P1-P13_/tree/main">Browse project files <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
 
-        <article class="portfolio-project project-bio">
-          <div class="project-topline"><span>MODULE 02</span><span>05</span></div>
-          <div class="project-icon icon-bio" aria-hidden="true"><span>SB</span></div>
-          <h3>A semantic introduction</h3>
-          <p>A biography page organized with meaningful HTML sections and accessible links.</p>
-          <a href="bio.html">View the biography page <span aria-hidden="true">↗</span></a>
-        </article>
+      <section class="ep-module" aria-labelledby="module-two">
+        <div class="ep-module-heading">
+          <span class="ep-module-number">02</span>
+          <div><p class="ep-kicker">STRUCTURE AND STYLE</p><h3 id="module-two">HTML &amp; CSS foundations</h3></div>
+          <span class="ep-module-count">P5 — P9</span>
+        </div>
+        <div class="ep-practical-grid ep-grid-three">
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P05</span><h4>A page about me</h4>
+            <p>A semantic bio page with room for the details that make it personal.</p>
+            <a href="bio.html">View the bio page <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card ep-card-featured">
+            <span class="ep-p-number">P06</span><h4>My portfolio page</h4>
+            <p>Building a full page from an introduction, work, and the details around it. You’re looking at the finished practical.</p>
+            <a href="#home">Back to the top <span aria-hidden="true">↑</span></a>
+          </article>
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P07</span><h4>Design tokens</h4>
+            <p>Keeping colours, spacing, and typography together in one shared stylesheet.</p>
+            <a href="css/styles.css">See the shared CSS <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P08</span><h4>Positioning elements</h4>
+            <p>A sticky navigation bar, a layered card, and fixed and positioned examples.</p>
+            <a href="positioning.html">Try the positioning page <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P09</span><h4>Getting to grips with Flexbox</h4>
+            <p>A responsive nav and card row that can wrap as the screen gets narrower.</p>
+            <a href="flexbox.html">View the Flexbox layout <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
 
-        <article class="portfolio-project project-portfolio">
-          <div class="project-topline"><span>MODULE 02</span><span>06 — 07</span></div>
-          <div class="project-icon icon-design" aria-hidden="true"><span>◫</span></div>
-          <h3>Portfolio &amp; design system</h3>
-          <p>A complete portfolio structure supported by reusable CSS tokens and typography.</p>
-          <a href="#top">You’re viewing it <span aria-hidden="true">↗</span></a>
-        </article>
+      <section class="ep-module" aria-labelledby="module-three">
+        <div class="ep-module-heading">
+          <span class="ep-module-number">03</span>
+          <div><p class="ep-kicker">LAYOUTS THAT ADAPT</p><h3 id="module-three">Choosing a layout system</h3></div>
+          <span class="ep-module-count">P10 — P13</span>
+        </div>
+        <div class="ep-practical-grid ep-grid-four">
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P10</span><h4>Flexbox, a little further</h4>
+            <p>Giving a header, card row, and footer room to adapt to their content.</p>
+            <a href="flexbox.html">See Flexbox in action <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P11</span><h4>A page like a newspaper</h4>
+            <p>Using Grid areas to arrange a lead story and supporting pieces.</p>
+            <a href="newspaper.html">Read the layout <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card">
+            <span class="ep-p-number">P12</span><h4>A projects grid</h4>
+            <p>Making space for a featured card and a gallery that responds to the screen.</p>
+            <a href="projects.html">View the projects grid <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="ep-practical-card ep-card-featured">
+            <span class="ep-p-number">P13</span><h4>Flexbox or Grid?</h4>
+            <p>Trying both, then choosing the one that suits the layout problem.</p>
+            <a href="layout-choice.html">Compare the layouts <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+    </section>
 
-        <article class="portfolio-project project-position">
-          <div class="project-topline"><span>MODULE 02</span><span>08</span></div>
-          <div class="project-icon icon-position" aria-hidden="true"><span>⊙</span></div>
-          <h3>Positioning in practice</h3>
-          <p>Sticky and fixed elements, a positioned overlay, and examples of stacking.</p>
-          <a href="positioning.html">View the positioning demo <span aria-hidden="true">↗</span></a>
-        </article>
-
-        <article class="portfolio-project project-flex">
-          <div class="project-topline"><span>MODULE 02–03</span><span>09 — 10</span></div>
-          <div class="project-icon icon-flex" aria-hidden="true"><span>↔</span></div>
-          <h3>Responsive Flexbox</h3>
-          <p>A responsive navigation, wrapping cards, and flexible header and footer layouts.</p>
-          <a href="flexbox.html">View the Flexbox practical <span aria-hidden="true">↗</span></a>
-        </article>
-
-        <article class="portfolio-project project-newspaper">
-          <div class="project-topline"><span>MODULE 03</span><span>11</span></div>
-          <div class="project-icon icon-grid" aria-hidden="true"><span>▦</span></div>
-          <h3>Newspaper with CSS Grid</h3>
-          <p>A responsive editorial layout using three columns and named grid areas.</p>
-          <a href="newspaper.html">View the newspaper layout <span aria-hidden="true">↗</span></a>
-        </article>
-
-        <article class="portfolio-project project-grid">
-          <div class="project-topline"><span>MODULE 03</span><span>12</span></div>
-          <div class="project-icon icon-projects" aria-hidden="true"><span>▤</span></div>
-          <h3>Projects grid</h3>
-          <p>Featured cards and responsive tracks using modern CSS Grid sizing.</p>
-          <a href="projects.html">View the projects grid <span aria-hidden="true">↗</span></a>
-        </article>
-
-        <article class="portfolio-project project-choice">
-          <div class="project-topline"><span>MODULE 03</span><span>13</span></div>
-          <div class="project-icon icon-choice" aria-hidden="true"><span>↗</span></div>
-          <h3>Flexbox or Grid?</h3>
-          <p>A side-by-side demonstration of when each layout tool is a good fit.</p>
-          <a href="layout-choice.html">Compare the two layouts <span aria-hidden="true">↗</span></a>
-        </article>
+    <section class="ep-github-project" id="projects" aria-labelledby="project-heading">
+      <div class="ep-github-project-copy">
+        <p class="ep-kicker">FROM MY PUBLIC GITHUB</p>
+        <h2 id="project-heading">Agent + Workflow Management System</h2>
+        <p>I found this project among the public repositories on my GitHub account. Its README describes a simple idea: connect two text-processing agents, run them in sequence, and follow what happens at each step. The project README lists React, Node.js, Express, Prisma, PostgreSQL, and JWT in its stack.</p>
+        <a class="ep-project-link" href="https://github.com/codewithsarang/mofa-ai-workflow" target="_blank" rel="noopener noreferrer">View the public repository <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="ep-project-art" aria-hidden="true">
+        <span class="ep-agent ep-agent-one">Text in</span>
+        <span class="ep-flow-line"></span>
+        <span class="ep-agent ep-agent-two">Agent A</span>
+        <span class="ep-flow-line"></span>
+        <span class="ep-agent ep-agent-three">Agent B</span>
+        <span class="ep-flow-line"></span>
+        <span class="ep-agent ep-agent-four">Result</span>
       </div>
     </section>
 
-    <section class="portfolio-about" id="about" aria-labelledby="about-heading">
-      <div class="about-mark" aria-hidden="true">SB<span>.</span></div>
-      <div class="about-copy">
-        <p class="eyebrow">A little about this work</p>
-        <h2 id="about-heading">Built with curiosity<br>and the fundamentals.</h2>
-        <p>I’m Sarang Bodhe, and this project documents my progress through the BOSSCODER web development laboratory. I focused on semantic page structure, responsive layouts, and making each practical easy to explore.</p>
-        <p>The examples are part of this assignment—not claims of client or employment work. I’m continuing to learn by building, testing, and refining.</p>
-      </div>
-      <aside class="about-facts" aria-label="Project details">
-        <div><span>COURSE WORK</span><strong>BOSSCODER · P1–P13</strong></div>
-        <div><span>BUILT WITH</span><strong>HTML · CSS · Git</strong></div>
-        <div><span>FOCUS</span><strong>Responsive web foundations</strong></div>
-        <div><span>EDUCATION</span><strong>Add your details before sharing</strong></div>
-      </aside>
-    </section>
-
-    <section class="portfolio-contact" id="contact" aria-labelledby="contact-heading">
-      <p class="eyebrow">Keep exploring</p>
-      <h2 id="contact-heading">The code is open.<br>Take a look around.</h2>
-      <p>Browse the complete assignment repository or return to the practical index.</p>
-      <div class="portfolio-actions">
-        <a class="button" href="https://github.com/codewithsarang/BOSSCODER-P1-P13_" target="_blank" rel="noopener noreferrer">Open the repository <span aria-hidden="true">↗</span></a>
-        <a class="portfolio-text-link" href="index.html">Browse all practicals <span aria-hidden="true">→</span></a>
-      </div>
+    <section class="ep-closing" aria-labelledby="closing-heading">
+      <p class="ep-kicker">THAT’S THE WORK SO FAR</p>
+      <h2 id="closing-heading">Thanks for taking a look.</h2>
+      <p>There’s more to learn, but this is a good place to start. The code and the practical pages are open on GitHub.</p>
+      <a class="ep-button ep-button-dark" href="https://github.com/codewithsarang" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
     </section>
   </main>
 
-  <footer class="portfolio-footer">
-    <a class="brand portfolio-brand" href="#top">Sarang Bodhe<span>.</span></a>
-    <p>Learning the web, one practical at a time.</p>
-    <a href="https://github.com/codewithsarang" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-    <span>© 2026 Sarang Bodhe</span>
+  <footer class="ep-footer">
+    <a class="ep-footer-name" href="#home">Sarang Bodhe<span>.</span></a>
+    <p>Made while learning, with HTML &amp; CSS.</p>
+    <a href="https://github.com/codewithsarang" target="_blank" rel="noopener noreferrer">@codewithsarang ↗</a>
+    <span>© 2026</span>
   </footer>
 </body>
 </html>

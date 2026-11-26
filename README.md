@@ -8,6 +8,8 @@ This repository contains the practical work for the BOSSCODER School of Technolo
 
 > Personal education and contact details that were not supplied are explicitly marked for editing. Practical project cards link to pages in this repository; they do not claim outside client or employment work.
 
+The portfolio uses the public `codewithsarang` GitHub profile details and links to public repositories. Its featured external project is described using the project repository's README.
+
 ## Practical index
 
 | Practical | Demonstration | Files |
@@ -17,7 +19,7 @@ This repository contains the practical work for the BOSSCODER School of Technolo
 | P3 | Feature branch, commit, push, and merge workflow | [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md), `feature/about-section` branch |
 | P4 | README, annotated version tag, and GitHub remote | [README.md](./README.md), [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md) |
 | P5 | Semantic biography with education, skills, interests, goals, and contact | [web-practicals/bio.html](./web-practicals/bio.html) |
-| P6 | Project-focused portfolio with an introduction, practical work, about section, and GitHub links | [web-practicals/portfolio.html](./web-practicals/portfolio.html) |
+| P6 | Project-focused portfolio with an introduction, practical modules, GitHub profile, and repository links | [web-practicals/portfolio.html](./web-practicals/portfolio.html) |
 | P7 | Centralized design tokens and typography | [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
 | P8 | Sticky navigation, fixed control, positioning modes, overlay, and stacking | [web-practicals/positioning.html](./web-practicals/positioning.html), [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
 | P9 | Responsive navigation and wrapping Flexbox cards | [web-practicals/flexbox.html](./web-practicals/flexbox.html), [web-practicals/css/styles.css](./web-practicals/css/styles.css) |
@@ -57,11 +59,21 @@ This repository contains the practical work for the BOSSCODER School of Technolo
 ## Run locally
 
 1. Clone the repository or open this repository folder in VS Code.
-2. Open `web-practicals/portfolio.html` for the portfolio, or `web-practicals/index.html` for the practical index.
+2. Open `index.html` for the portfolio, `web-practicals/portfolio.html` for its source page, or `web-practicals/index.html` for the practical index.
 3. Use the portfolio cards or practical index to open P5–P13.
 4. Resize the browser or use Developer Tools to inspect desktop (1440px), tablet (768px), and mobile (375px) layouts.
 
 For Terminal navigation and Git exercises, follow [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md).
+
+## Publish with GitHub Pages
+
+The static site is configured to deploy with [`.github/workflows/pages.yml`](./.github/workflows/pages.yml). To activate the public Pages site once:
+
+1. Open this repository's **Settings → Pages**.
+2. Under **Build and deployment**, select **GitHub Actions** as the source.
+3. If the first workflow run started before Pages was enabled, rerun it from the **Actions** tab.
+
+After the workflow completes, the portfolio will be available at [https://codewithsarang.github.io/BOSSCODER-P1-P13_/](https://codewithsarang.github.io/BOSSCODER-P1-P13_/). The workflow publishes the practical pages from `web-practicals/` and redirects the site root to the portfolio.
 
 ## Git workflow
 

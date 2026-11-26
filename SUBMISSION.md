@@ -20,7 +20,9 @@
 
 ## How to run
 
-Open `web-practicals/portfolio.html` for the project portfolio or `web-practicals/index.html` for the practical index in a browser. You can also open the repository in VS Code and use Live Server if installed. No build step or external packages are required. Follow [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md) for command-line practicals.
+Open `index.html` for the project portfolio, `web-practicals/portfolio.html` for the portfolio source, or `web-practicals/index.html` for the practical index in a browser. You can also open the repository in VS Code and use Live Server if installed. No build step or external packages are required. Follow [P1-P4-Git-Workflow.md](./P1-P4-Git-Workflow.md) for command-line practicals.
+
+The static site deploys through [`.github/workflows/pages.yml`](./.github/workflows/pages.yml). Enable **Settings → Pages → Build and deployment → GitHub Actions** once. After a successful deployment, the site URL is `https://codewithsarang.github.io/BOSSCODER-P1-P13_/`.
 
 ## Screenshot checklist
 
@@ -57,6 +59,7 @@ The configured repository link is [github.com/codewithsarang/BOSSCODER-P1-P13_](
 - [x] P1–P13 instructions and page content reviewed.
 - [x] Opened every P5–P13 HTML page in the browser; the shared stylesheet loaded.
 - [x] Checked the project portfolio at 1440px, 768px, and 375px.
+- [x] Replaced portfolio biographical details with facts from the public `codewithsarang` profile and repository README; no unverified education or collaboration claims were added.
 - [x] Checked local navigation links and same-page/cross-page anchors.
 - [x] Checked responsive layouts at 1440px, 768px, and 375px.
 - [x] Confirmed no horizontal overflow at those widths; the responsive Grid and Flexbox tracks adapt as intended.
@@ -70,6 +73,7 @@ The configured repository link is [github.com/codewithsarang/BOSSCODER-P1-P13_](
 
 - Browser-tested all eight practical HTML pages at 1440px, 768px, and 375px. All rendered with the shared stylesheet; `scrollWidth` matched the viewport width on every page and each viewport.
 - Browser-tested the project portfolio at 1440px, 768px, and 375px. Its eight practical cards remained visible, no horizontal overflow occurred, and the browser reported no errors.
+- Confirmed the repository is public and the official GitHub API reports Pages disabled; workflow setup is committed, but GitHub Pages still requires a one-time source selection in repository settings.
 - Checked navigation targets and anchors with a local link checker; all resolved.
 - Checked CSS Grid column changes for the newspaper and projects pages and Flexbox wrapping for the card row at all three viewport widths.
 - Confirmed sticky-header and fixed-control behavior on P8.
